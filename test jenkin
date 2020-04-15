@@ -1,4 +1,4 @@
-pipeline node ("master"){
+pipeline {
    agent any
 
    tools {
