@@ -10,7 +10,7 @@ pipeline {
       stage('Build') {
          steps {
             // Get some code from a GitHub repository
-            git branch: 'master', url: 'https://github.com/awkempire/Card-applilcation.git'
+            git branch: '', url: 'https://github.com/awkempire/Card-applilcation.git'
 
             // Run Maven on a Unix agent.
             sh "mvn -Dmaven.test.failure.ignore=true clean package"
