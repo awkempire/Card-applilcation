@@ -1,0 +1,17 @@
+def my_referece_method(stringmsg = "Adrak")
+{
+        echo "$stringmsg"
+        echo "First reference method"
+}
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            
+        steps{
+            echo "lavda mera"
+           my_referece_method()
+        }
+        }
+    }
+}
